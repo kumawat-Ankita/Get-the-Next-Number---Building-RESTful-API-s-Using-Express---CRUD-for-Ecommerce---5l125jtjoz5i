@@ -12,7 +12,7 @@ app.get('/api/get-next-num', (req, res) => {
 
   // Check if 'num' exists in the request body and is a valid integer
   if (num === undefined || !Number.isInteger(num)) {
-    return res.status(400).json({ message: 'Invalid number or no number provided', status: 'failure' });
+    return res.status(200).json({ message: 'Invalid number or no number provided', status: 'success' });
   }
 
   // Calculate the next number
